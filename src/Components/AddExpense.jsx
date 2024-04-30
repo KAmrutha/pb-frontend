@@ -199,7 +199,7 @@ export default function AddExpense() {
                   <Th>Category</Th>
                   <Th>Date</Th>
                   <Th>Amount Spent</Th>
-                  <Th>Amount Bar</Th>
+                
                   <Th>Action</Th>
                 </Tr>
               </Thead>
@@ -214,11 +214,7 @@ export default function AddExpense() {
                     <Td fontSize="sm">
                      $ {exp.amount}
                     </Td>
-                    <Td>
-                      <Box w="100%" bg={bg} rounded="md">
-                        <Box w={0.8} h={2} bg={bgBar} rounded="md"></Box>
-                      </Box>
-                    </Td>
+                   
                     
                     <Td fontSize="sm">
                       <Button size="sm"  onClick={() => removeExpense(exp._id)} >Delete</Button>
