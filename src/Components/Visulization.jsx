@@ -314,31 +314,24 @@ useEffect(()=>{
           </Box>
         </Box>
       </Flex>
-      <Flex
-  direction={{ base: 'column', md: 'row' }} >
-  {/* First column (Weekly Expenses) */}
-  <Box flex={{ base: 'none', md: 1 }} p={5} pt={{ base: 10, md: 0 }}     order={{ base: 2, md: 1 }} 
-  >
-    <Box>
-      <Heading as="h3" size="md" mb={3}>
-        Weekly Expenses
-      </Heading>
-      <LineChart1 data={weeklyExpenses} />
-    </Box>
-  </Box>
-
-  {/* Second column (Budget-Expense Distribution) */}
-  <Box flex={{ base: 'none', md: 2 }} p={5} pt={{ base: 10, md: 0 }} 
-    order={{ base: 1, md: 2 }} 
-  >
-    <Box>
-      <Heading as="h3" size="md" mb={3}>
-        Budget-Expense Distribution
-      </Heading>
-      <StackedBarChart data={categories} />
-    </Box>
-  </Box>
-</Flex>
+        <Box  p={5}>
+          <Box pt={10}>
+            <Heading as="h3" size="md" mb={3}>
+              Weekly Expenses
+            </Heading>
+            <LineChart1 data={weeklyExpenses} />
+          </Box>
+        </Box>
+        <Box  p={5}>
+          <Box pt={10}>
+            <Heading as="h3" size="md" mb={3}>
+              Budget-Expense Distribution
+            </Heading>
+            <StackedBarChart data={categories} />
+          </Box>
+        </Box>
+     
+    
     </>
   );
 }
