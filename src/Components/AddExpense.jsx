@@ -188,7 +188,7 @@ export default function AddExpense() {
             <chakra.h3 fontSize="xl" fontWeight="bold" textAlign="left">
               Total Expenditure
             </chakra.h3>
-            <Button onClick={onOpen} colorScheme="teal" variant="solid">Add Expense</Button>
+            <Button onClick={onOpen}>Add Expense</Button>
           </Flex>
           <Divider />
           <TableContainer>
