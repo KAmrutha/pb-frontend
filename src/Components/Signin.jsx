@@ -93,7 +93,7 @@ export default function SimpleCard() {
                 justify={"space-between"}
               >
                 <Checkbox>Remember me</Checkbox>
-                <Text color={"blue.400"}>Forgot password?</Text>
+                
               </Stack>
               <Button
                 bg={"blue.400"}
