@@ -5,7 +5,7 @@ const baseURL = 'https://king-prawn-app-s8sf3.ondigitalocean.app/expensetracker/
 
 const Axios = axios.create({
   baseURL,
-  timeout: 10000,
+  timeout: 20000,
   headers: {
     'Content-Type': 'application/json',
     'ngrok-skip-browser-warning': 'true',
